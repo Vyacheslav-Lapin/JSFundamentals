@@ -9,108 +9,199 @@
 </head>
 <body>
 
-    <header>
-        <figure><img src="_img/menu_button.gif" alt="Menu"/></figure>
-        <figure><a href="/"><img src="_img/logo.gif" alt="Indigo Logo"/></a></figure>
-        <form action="http://google.com" method="get">
-            <input name="q" placeholder="Search"/>
-        </form>
-        <figure>
-            <!-- todo: insert real avater address-->
-            <!-- todo: insert real user name ? -->
-            <img src="_img/_avatars/1.gif" alt="..."/>
-        </figure>
-    </header>
+<header>
+    <figure><img src="_img/menu_button.gif" alt="Menu"/></figure>
+    <figure><a href="/"><img src="_img/logo.gif" alt="Indigo Logo"/></a></figure>
+    <form action="http://google.com" method="get">
+        <input name="q" placeholder="Search"/>
+    </form>
+    <figure>
+        <!-- todo: insert real avater address-->
+        <!-- todo: insert real user name ? -->
+        <img src="_img/_avatars/1.gif" alt="..."/>
+    </figure>
+</header>
 
-    <aside>
-        <nav>
+<aside>
+    <nav>
+        <ul>
+            <li><a href="bookmarks/1/">My Bookmarks</a></li>
+            <li><a href="projects/">All Projects</a></li>
+            <li>
+                <a href="projects/">VI Project</a>
+                <ul>
+                    <li>
+                        <a href="projects/111222/">111222</a>
+                        <ul>
+                            <li>
+                                <a href="projects/111222/Table/">Table</a>
+                                <ul>
+                                    <li class="selected"><a href="projects/111222/Table/1/">0001</a></li>
+                                    <li><a href="projects/111222/Table/2/">0002</a></li>
+                                    <li><a href="projects/111222/Table/3/">0003</a></li>
+                                    <li><a href="projects/111222/Table/4/">0004</a></li>
+                                    <li><a href="projects/111222/Table/5/">0005</a></li>
+                                    <li><a href="projects/111222/Table/6/">0006</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="projects/1/">My Project</a></li>
+            <li><a href="projects/new/">New Project</a></li>
+        </ul>
+    </nav>
+</aside>
+
+<nav id="toolbar">
+    <ul>
+        <li>
             <ul>
-                <li><a href="bookmarks/1/">My Bookmarks</a></li>
-                <li><a href="projects/">All Projects</a></li>
+                <li><a href="#"><img src="_img/toolbar/up-arrow.gif"/></a></li>
+                <li><a href="#"><img src="_img/toolbar/cog.gif"/></a></li>
+                <li><a href="#"><img src="_img/toolbar/squares.gif"/></a></li>
+                <li><a href="#"><img src="_img/toolbar/question.gif"/></a></li>
+            </ul>
+        </li>
+        <li>
+            <ul>
+                <li><a href="#"><img src="_img/toolbar/new_document.gif"/></a></li>
+                <li><a href="#"><img src="_img/toolbar/copy.gif"/></a></li>
+                <li><a href="#"><img src="_img/toolbar/disk.gif"/></a></li>
+                <li><a href="#"><img src="_img/toolbar/folder.gif"/></a></li>
+                <li><a href="#"><img src="_img/toolbar/save.gif"/></a></li>
+                <li><a href="#"><img src="_img/toolbar/print.gif"/></a></li>
+                <li><a href="#"><img src="_img/toolbar/search.gif"/></a></li>
+            </ul>
+        </li>
+        <li>
+            <ul>
+                <li><a href="#"><img src="_img/toolbar/profile.gif"/></a></li>
+                <li><a href="#"><img src="_img/toolbar/settings.gif"/></a></li>
+                <li><a href="/"><img src="_img/toolbar/home.gif"/></a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+<section>
+    <section>
+        <h1>template</h1>
+        <!-- todo: Add content -->
+    </section>
+    <section>
+        <h1>new template</h1>
+
+        <form action="/search/" method="get">
+            <input name="filter" placeholder="Name"/>
+        </form>
+
+        <article>
+            <header>
+                <h1>Components</h1>
+            </header>
+            <ul>
                 <li>
-                    <a href="projects/">VI Project</a>
+                    <form action="/filter/" method="get">
+                        <input name="criteria" placeholder="Search by name or description"/>
+                    </form>
+                </li>
+                <li>
+                    <h1>Concept Details</h1>
+                    <p>Description</p>
+                </li>
+                <li>
+                    <h1>Reaction Details</h1>
+                    <p>Description</p>
+                </li>
+                <li>
+                    <h1>Product Batch Summary</h1>
+                    <p>Description</p>
+                </li>
+                <li>
+                    <h1>Product Batch Details</h1>
+                    <p>Description</p>
+                </li>
+                <li>
+                    <h1>Reaction Scheme</h1>
+                    <p>Description</p>
+                </li>
+                <li><!-- todo: fill the list -->
+                    <h1>...</h1>
+                    <p>Description</p>
+                </li>
+            </ul>
+        </article>
+
+        <article>
+            <header>
+                <h1>Template builder</h1>
+                <button>Create New Tab</button>
+            </header>
+            <ul id="tabs">
+                <li>
+                    Experimental
                     <ul>
                         <li>
-                            <a href="projects/111222/">111222</a>
-                            <ul>
-                                <li>
-                                    <a href="projects/111222/Table/">Table</a>
-                                    <ul>
-                                        <li class="selected"><a href="projects/111222/Table/1/">0001</a></li>
-                                        <li><a href="projects/111222/Table/2/">0002</a></li>
-                                        <li><a href="projects/111222/Table/3/">0003</a></li>
-                                        <li><a href="projects/111222/Table/4/">0004</a></li>
-                                        <li><a href="projects/111222/Table/5/">0005</a></li>
-                                        <li><a href="projects/111222/Table/6/">0006</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
+                            <h1>Reaction Details</h1>
+                            <p>Description</p>
+                        </li>
+                        <li>
+                            <h1>Reaction Scheme</h1>
+                            <p>Description</p>
+                        </li>
+                        <li>
+                            <h1>Stoichiometry Table</h1>
+                            <p>Description</p>
                         </li>
                     </ul>
                 </li>
-                <li><a href="projects/1/">My Project</a></li>
-                <li><a href="projects/new/">New Project</a></li>
+                <li>
+                    Batches
+                    <ul>
+                        <li>
+                            <h1>Concept Details</h1>
+                            <p>Description</p>
+                        </li>
+                        <li>
+                            <h1>Product Batch Details</h1>
+                            <p>Description</p>
+                        </li>
+                        <li><!-- todo: fill the list -->
+                            <h1>...</h1>
+                            <p>Description</p>
+                        </li>
+                    </ul>
+                </li>
+                <!-- todo: make sure if list is fill -->
             </ul>
-        </nav>
-    </aside>
+        </article>
 
-    <nav id="toolbar">
-        <ul>
-            <li>
-                <ul>
-                    <li><a href="#"><img src="_img/toolbar/up-arrow.gif"/></a></li>
-                    <li><a href="#"><img src="_img/toolbar/cog.gif"/></a></li>
-                    <li><a href="#"><img src="_img/toolbar/squares.gif"/></a></li>
-                    <li><a href="#"><img src="_img/toolbar/question.gif"/></a></li>
-                </ul>
-            </li>
-            <li>
-                <ul>
-                    <li><a href="#"><img src="_img/toolbar/new_document.gif"/></a></li>
-                    <li><a href="#"><img src="_img/toolbar/copy.gif"/></a></li>
-                    <li><a href="#"><img src="_img/toolbar/disk.gif"/></a></li>
-                    <li><a href="#"><img src="_img/toolbar/folder.gif"/></a></li>
-                    <li><a href="#"><img src="_img/toolbar/save.gif"/></a></li>
-                    <li><a href="#"><img src="_img/toolbar/print.gif"/></a></li>
-                    <li><a href="#"><img src="_img/toolbar/search.gif"/></a></li>
-                </ul></li>
-            <li>
-                <ul>
-                    <li><a href="#"><img src="_img/toolbar/profile.gif"/></a></li>
-                    <li><a href="#"><img src="_img/toolbar/settings.gif"/></a></li>
-                    <li><a href="/"><img src="_img/toolbar/home.gif"/></a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-
-    <section>
         <section>
-            <h1>template</h1>
-            <!-- todo: Add content -->
-        </section>
-        <section>
-            <h1>new template</h1>
+            <header><h1>Show preview</h1></header>
+            <section>
+                <header><h1>Experimental</h1></header>
+                <article>
+                    <header><h1>Reaction Details</h1></header>
+                    <form></form>
+                </article>
+                <article></article>
+                <article></article>
+            </section>
+            <section>
+                <header><h1>Batches</h1></header>
+                <!--todo: fill content -->
+            </section>
 
-            <form action="/search/" method="get">
-                <input name="filter" placeholder="Name"/>
-            </form>
-
-            <ul>
-                <li><form action="/filter/" method="get">
-                    <input name="criteria" placeholder="Search by name or description"/>
-                </form></li>
-            </ul>
         </section>
     </section>
 
-    <aside>
+</section>
 
-    </aside>
-
-    <footer>
-        (с) Copyright EPAM Systems 2016
-    </footer>
+<!--<footer>-->
+<!--(с) Copyright EPAM Systems 2016-->
+<!--</footer>-->
 
 </body>
 </html>
