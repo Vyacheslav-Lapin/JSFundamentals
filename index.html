@@ -1,32 +1,106 @@
 <!DOCTYPE html>
-<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" xml:lang="en"
+      xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
     <title>Title</title>
-    <link rel="stylesheet" href="_styles/style.css">
-    <script src="_scripts/script.js" async></script>
+    <link rel="stylesheet" href="_styles/style.css"/>
+    <script src="_scripts/script.js" async="async"></script>
 </head>
 <body>
 
     <header>
-        <h1>Компания</h1>
-        <small>Девиз</small>
+        <figure><img src="_img/menu_button.gif" alt="Menu"/></figure>
+        <figure><a href="/"><img src="_img/logo.gif" alt="Indigo Logo"/></a></figure>
+        <form action="http://google.com" method="get">
+            <input name="q" placeholder="Search"/>
+        </form>
+        <figure>
+            <!-- todo: insert real avater address-->
+            <!-- todo: insert real user name ? -->
+            <img src="_img/_avatars/1.gif" alt="..."/>
+        </figure>
     </header>
 
-    <nav>
+    <aside>
+        <nav>
+            <ul>
+                <li><a href="bookmarks/1/">My Bookmarks</a></li>
+                <li><a href="projects/">All Projects</a></li>
+                <li>
+                    <a href="projects/">VI Project</a>
+                    <ul>
+                        <li>
+                            <a href="projects/111222/">111222</a>
+                            <ul>
+                                <li>
+                                    <a href="projects/111222/Table/">Table</a>
+                                    <ul>
+                                        <li class="selected"><a href="projects/111222/Table/1/">0001</a></li>
+                                        <li><a href="projects/111222/Table/2/">0002</a></li>
+                                        <li><a href="projects/111222/Table/3/">0003</a></li>
+                                        <li><a href="projects/111222/Table/4/">0004</a></li>
+                                        <li><a href="projects/111222/Table/5/">0005</a></li>
+                                        <li><a href="projects/111222/Table/6/">0006</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="projects/1/">My Project</a></li>
+                <li><a href="projects/new/">New Project</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <nav id="toolbar">
         <ul>
-            <a href="1.html">123</a>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>
+                <ul>
+                    <li><a href="#"><img src="_img/toolbar/up-arrow.gif"/></a></li>
+                    <li><a href="#"><img src="_img/toolbar/cog.gif"/></a></li>
+                    <li><a href="#"><img src="_img/toolbar/squares.gif"/></a></li>
+                    <li><a href="#"><img src="_img/toolbar/question.gif"/></a></li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li><a href="#"><img src="_img/toolbar/new_document.gif"/></a></li>
+                    <li><a href="#"><img src="_img/toolbar/copy.gif"/></a></li>
+                    <li><a href="#"><img src="_img/toolbar/disk.gif"/></a></li>
+                    <li><a href="#"><img src="_img/toolbar/folder.gif"/></a></li>
+                    <li><a href="#"><img src="_img/toolbar/save.gif"/></a></li>
+                    <li><a href="#"><img src="_img/toolbar/print.gif"/></a></li>
+                    <li><a href="#"><img src="_img/toolbar/search.gif"/></a></li>
+                </ul></li>
+            <li>
+                <ul>
+                    <li><a href="#"><img src="_img/toolbar/profile.gif"/></a></li>
+                    <li><a href="#"><img src="_img/toolbar/settings.gif"/></a></li>
+                    <li><a href="/"><img src="_img/toolbar/home.gif"/></a></li>
+                </ul>
+            </li>
         </ul>
     </nav>
 
     <section>
-        <h1></h1>
-        Компания очень успешна на рынке...
         <section>
-            <h1></h1>
+            <h1>template</h1>
+            <!-- todo: Add content -->
+        </section>
+        <section>
+            <h1>new template</h1>
+
+            <form action="/search/" method="get">
+                <input name="filter" placeholder="Name"/>
+            </form>
+
+            <ul>
+                <li><form action="/filter/" method="get">
+                    <input name="criteria" placeholder="Search by name or description"/>
+                </form></li>
+            </ul>
         </section>
     </section>
 
