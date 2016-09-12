@@ -11,10 +11,59 @@ figure {
 
 body > header {
     background-color: #3f51b5;
-    /*283593 - под логотипом */
-    /*424242 - под кнопкой меню */
+}
+
+body > header {
+    position: relative;
+    padding-bottom: 60px;
 }
 
 body > header > * {
     display: inline-block;
+    /*position: absolute;*/
+}
+
+#menuButton {
+    background-color: #424242;
+    padding: 20px 18px; /*todo: разобраться почему размеры не совпадают должно быть 22 18*/
+}
+
+#logo {
+    background-color: #283593;
+    padding: 11px 26px 8px 17px;
+}
+
+#menuButton,
+#logo {
+    float: left;
+}
+
+#search { margin: 0; padding: 0; position: relative; }
+
+#search > input {
+    margin: 14px 15px;
+    height: 13px;
+    background-color: #283593;
+    border: 0;
+    border-radius: 13px;
+    padding: 11px 20px;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    color: #5c6bc0;
+    font-size: 10pt;
+}
+
+/*#search > input:before {*/
+    /*content: "h";*/
+    /*font-family: 'FontAwesome';*/
+    /*position: absolute;*/
+    /*left: 20px;*/
+/*}*/
+
+#search,
+#avatar {
+    float: right;
+}
+
+#avatar {
+    margin: 11px 8px 6px 0;
 }
