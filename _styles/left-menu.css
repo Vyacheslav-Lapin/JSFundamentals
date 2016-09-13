@@ -53,3 +53,12 @@ aside > nav > ul > li li > a {
 aside > nav > ul > li li.selected > a {
     color: #fff;
 }
+
+aside > nav > ul li.expanded > a:after {
+    content: url(/_img/copy.png);
+    float: right;
+    position: relative;
+    top: -6px;
+    right: 19px;
+}
+
