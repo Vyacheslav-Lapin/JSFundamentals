@@ -1,0 +1,24 @@
+aside {
+    background-color: #424242;
+    float: left;
+    width: 214px;
+    padding-bottom: 32767px;
+    margin-bottom: -32767px;
+    overflow: hidden;
+}
+
+aside > nav > ul {
+    margin: 0;
+}
+
+aside > nav > ul > li:first-child {
+    list-style-image: url(/_img/bookmark_bullet.png);
+}
+
+aside > nav > ul > li {
+    list-style-image: url(/_img/tree_bullet.png);
+}
+
+aside > nav > ul > li li {
+    list-style: none;
+}
