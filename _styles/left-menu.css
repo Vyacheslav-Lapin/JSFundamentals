@@ -9,16 +9,47 @@ aside {
 
 aside > nav > ul {
     margin: 0;
+    padding-left: 0;
+    /*text-indent: 10px;*/
+    /*todo: center bullets */
 }
 
 aside > nav > ul > li:first-child {
     list-style-image: url(/_img/bookmark_bullet.png);
+    margin-top: 2px;
 }
 
 aside > nav > ul > li {
-    list-style-image: url(/_img/tree_bullet.png);
+    border-top: #666 solid 1px;
+    font-family: 'Oswald Regular', 'Myriad Pro', Arial, sans-serif;
+    font-size: 16pt;
+    list-style: inside url(/_img/tree_bullet.png);
+    /*margin-left: -50px;*/
+    padding-left: 12px;
+}
+
+aside > nav > ul > li > a {
+    color: #fff;
+
+}
+
+aside > nav > ul > li.selected {
+    background-color: #212121;
+}
+
+aside > nav > ul > li.selected + * {
+    border-top: 0;
 }
 
 aside > nav > ul > li li {
     list-style: none;
+    background-color: #212121;
+}
+
+aside > nav > ul > li li > a {
+    color: #757575;
+}
+
+aside > nav > ul > li li.selected > a {
+    color: #fff;
 }
