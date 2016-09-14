@@ -11,12 +11,15 @@ body > header > * {
 
 #menuButton {
     background-color: #424242;
-    padding: 20px 18px; /*todo: разобраться почему размеры не совпадают должно быть 22 18*/
+    color: #fff;
+    font-size: 18px;
+    padding: 18px 19px; /*todo: разобраться почему размеры не совпадают должно быть 22 18*/
+    position: absolute;
 }
 
 #logo {
     background-color: #283593;
-    padding: 11px 26px 8px 17px;
+    padding: 11px 26px 8px 71px;
 }
 
 #menuButton,
