@@ -10,44 +10,74 @@ aside {
 aside > nav > ul {
     margin: 0;
     padding-left: 0;
-    /*text-indent: 10px;*/
+    border-bottom: #666 solid 1px;
     /*todo: center bullets */
 }
 
 aside > nav > ul > li:first-child {
-    list-style-image: url(/_img/bookmark_bullet.png);
+    /*list-style-image: url(/_img/bookmark_bullet.png);*/
     margin-top: 2px;
+}
+
+/*noinspection CssNoGenericFontName*/
+aside > nav > ul > li:before {
+    content: '\f0e8';
+    font-family: FontAwesome;
+    font-size: 15px;
+    /*font-weight: 100; todo: lighter with effect*/
+    color: white;
+    display: inline-block;
+    position: relative;
+    left: -12px;
+    top: -1px;
+}
+
+aside > nav > ul > li:first-child:before {
+    content: '\f02e';
 }
 
 aside > nav > ul > li {
     border-top: #666 solid 1px;
     font-family: 'Oswald Regular', 'Myriad Pro', Arial, sans-serif;
     font-size: 16pt;
-    list-style: inside url(/_img/tree_bullet.png);
+    list-style: none;
+    /*url(/_img/tree_bullet.png)*/
     /*margin-left: -50px;*/
-    padding-left: 12px;
+    padding: 16px 0 16px 30px;
 }
 
 aside > nav > ul > li > a {
     color: #fff;
-
+    text-transform: uppercase;
 }
 
 aside > nav > ul > li.selected {
     background-color: #212121;
+    border-top: 0;
 }
 
 aside > nav > ul > li.selected + * {
     border-top: 0;
 }
 
+aside > nav > ul ul {
+    -webkit-padding-start: 20px;
+    -moz-padding-start: 20px;
+}
+
 aside > nav > ul > li li {
     list-style: none;
     background-color: #212121;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 aside > nav > ul > li li > a {
     color: #757575;
+}
+
+aside > nav > ul li.selected {
+    padding-bottom: 0;
 }
 
 aside > nav > ul > li li.selected > a {

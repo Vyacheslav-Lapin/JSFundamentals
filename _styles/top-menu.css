@@ -7,7 +7,6 @@ body > header {
 
 body > header > * {
     display: inline-block;
-    /*position: absolute;*/
 }
 
 #menuButton {
