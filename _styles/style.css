@@ -1,6 +1,7 @@
 @import url(top-menu.css);
 @import url(left-menu.css);
 @import url(content-box.css);
+@import url(tool-box.css);
 
 @font-face {
     font-family: FontAwesome;
@@ -25,4 +26,8 @@ figure {
 
 a {
     text-decoration: none;
+}
+
+html > body > section {
+    display: none;
 }
