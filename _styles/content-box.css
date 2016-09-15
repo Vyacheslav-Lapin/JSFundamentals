@@ -1,5 +1,5 @@
-/*#toolbox,*/
 body > section {
     float: right;
     margin-left: 214px;
+    display: none;
 }

@@ -1,17 +1,12 @@
 #toolbox {
     display: block;
-    background-color: #ededed;
     margin-left: 214px;
+    background-color: #ededed;
 }
 
-#toolbox ul {
-    margin: 0;
-    padding: 0;
-}
+#toolbox ul { margin: 0; padding: 0; }
 
-#toolbox > ul > li {
-    margin-right: 42px;
-}
+#toolbox > ul > li { margin-right: 42px; }
 
 #toolbox > ul li {
     display: inline-block;
@@ -20,10 +15,10 @@
 
 /*noinspection CssNoGenericFontName*/
 #toolbox > ul > li > ul > li {
+    padding: 10px 0 20px 0;
     border-right: 1px solid #d1d0d0;
     font-family: FontAwesome;
     font-size: 18px;
-    padding: 10px 0 20px 0;
     color: #7d7d7d;
 }
 

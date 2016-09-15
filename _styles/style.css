@@ -1,7 +1,7 @@
-@import url(top-menu.css);
+@import url(top-panel.css);
 @import url(left-menu.css);
-@import url(content-box.css);
 @import url(tool-box.css);
+@import url(content-box.css);
 
 @font-face {
     font-family: FontAwesome;
@@ -13,21 +13,8 @@
     src: url(/_fonts/Oswald-Regular.ttf);
 }
 
-html {
-}
+body,
+figure,
+form { margin: 0; padding: 0 }
 
-body {
-    margin: 0;
-}
-
-figure {
-    margin: 0;
-}
-
-a {
-    text-decoration: none;
-}
-
-html > body > section {
-    display: none;
-}
+a { text-decoration: none; }
