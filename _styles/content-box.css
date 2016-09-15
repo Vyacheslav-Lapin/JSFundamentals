@@ -4,8 +4,18 @@ body > section {
 
 body > div > h1 {
     display: inline-block;
-    border-width: 0 1px 1px 0;
     border: #e0e0e0 solid;
+    border-width: 0 1px 1px 0;
+    padding-left: 31px;
+}
+body > div > h1:after {
+    content: '\d7';
+    display: inline-block;
+    padding: 0 13px 0 30px;
+}
+
+body > div > h1.selected {
+    border-bottom-width: 0;
 }
 
 body > section > section { display: none; }
