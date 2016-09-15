@@ -69,6 +69,7 @@ aside > nav > ul > li li {
 }
 
 aside > nav > ul > li li.selected > a { color: #fff; }
+aside > nav > ul > li li.selected.expanded > a { color: #757575; }
 
 aside > nav > ul li.selected.expanded { padding-bottom: 0; }
 

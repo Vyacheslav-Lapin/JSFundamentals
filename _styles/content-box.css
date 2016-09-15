@@ -1,5 +1,11 @@
 body > section {
-    float: right;
     margin-left: 214px;
-    display: none;
 }
+
+body > div > h1 {
+    display: inline-block;
+    border-width: 0 1px 1px 0;
+    border: #e0e0e0 solid;
+}
+
+body > section > section { display: none; }
