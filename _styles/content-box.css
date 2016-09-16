@@ -21,7 +21,6 @@ body > section > header > a {
     border-width: 0 1px 1px 0;
     padding: 18px 15px;
     font-size: 14px;
-    /*z-index: 1;*/
 }
 
 body > section > header > a:after {
