@@ -3,7 +3,34 @@ body > section {
     position: relative;
 }
 
+body > section > .scroller:target + .item {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+}
 
+body > section > .scroller:target + .item.selected {
+    position: relative;
+}
+
+body > section > .item {
+    background-color: #ffffff;
+    color: #333333;
+    padding: 20px;
+    display: none;
+    /*max-height: 384px;*/
+    overflow-y: auto;
+}
+
+/*Всегда отображаем первый таб*/
+body > section > .item.selected {
+    display: block;
+    z-index: 1;
+}
 
 body > section > header > a {
     display: inline-block;
@@ -11,6 +38,7 @@ body > section > header > a {
     border-width: 0 1px 1px 0;
     padding-left: 31px;
 }
+
 body > section > header > a:after {
     content: '\d7';
     display: inline-block;
@@ -21,4 +49,6 @@ body > section > header > a.selected {
     border-bottom-width: 0;
 }
 
-body > section > section { display: none; }
+body > section > section {
+    display: none;
+}
