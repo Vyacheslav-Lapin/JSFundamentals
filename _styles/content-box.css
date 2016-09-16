@@ -3,25 +3,25 @@ body > section {
     position: relative;
 }
 
-/* Всегда отображаем первый таб */
-body > section > .selected {
-    display: block;
-    z-index: 1;
-}
-
 body > section > header {
     font-size: 0;
-    letter-spacing:-1px
+    letter-spacing:-1px;
+    border: #e0e0e0 solid;
+    border-width: 0 0 1px 0;
 }
 
 body > section > header > a {
     display: inline-block;
+    position: relative;
+    top: 1px;
+    background-color: #fff;
     text-transform: uppercase;
     color: #b1b1b1;
     border: #e0e0e0 solid;
     border-width: 0 1px 1px 0;
     padding: 18px 15px;
     font-size: 14px;
+    /*z-index: 1;*/
 }
 
 body > section > header > a:after {
@@ -31,26 +31,25 @@ body > section > header > a:after {
 }
 
 body > section > header > a.selected {
-    border-bottom-width: 0;
+    border-bottom: 1px solid #fff;
 }
 
 body > section > .scroller:target + .item {
     display: block;
     position: absolute;
-    /*left: 0;*/
-    /*right: 0;*/
-    /*top: 0;*/
-    /*bottom: 0;*/
-    z-index: 2;
 }
 
 body > section > .scroller:target + .item.selected {
     position: relative;
 }
 
+/* Всегда отображаем первый таб */
+body > section > .item.selected {
+    display: block;
+}
+
 body > section > .item {
     display: none;
-    z-index: 0;
     padding: 20px;
     max-height: 100px;
 }
