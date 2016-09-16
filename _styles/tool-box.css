@@ -10,6 +10,16 @@
     white-space: nowrap;
 }
 
+#toolbox ul {
+    font-size: 0;
+    letter-spacing:-1px
+}
+
+#toolbox li {
+    font-size: 10pt;
+    letter-spacing: normal;
+}
+
 #toolbox > ul > li > ul {
     margin: 0;
     padding: 0;
