@@ -1,0 +1,11 @@
+body > section > section {
+
+}
+
+#newTemplateTab > form > input {
+    width: 127px;
+    height: 24px;
+    border: 1px solid #bdbdbd;
+    border-radius: 12px;
+    padding-left: 29px;
+}

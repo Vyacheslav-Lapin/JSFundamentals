@@ -1,7 +1,8 @@
-@import url(top-panel.css);
-@import url(left-menu.css);
-@import url(tool-box.css);
-@import url(content-box.css);
+@import 'top-panel.css';
+@import 'left-menu.css';
+@import 'tool-box.css';
+@import 'main-content-tabs.css';
+@import 'main-content-block.css';
 
 @font-face {
     font-family: FontAwesome;
@@ -18,8 +19,5 @@ html {
     font-family: 'Oswald Regular', sans-serif;
 }
 
-body,
-figure,
-form { margin: 0; padding: 0 }
-
+* { margin: 0; padding: 0 }
 a { text-decoration: none; }
