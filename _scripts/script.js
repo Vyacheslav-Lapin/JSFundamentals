@@ -1,6 +1,6 @@
 "use strict";
 
-function addMisc(object, miscConstructors) {
+function addMixins(object, miscConstructors) {
     miscConstructors = Array.from(arguments).slice(1);
     for (let miscConstructor of miscConstructors) {
         miscConstructor.apply(object);
@@ -24,7 +24,6 @@ Shape.prototype.square = function () {
 };
 
 /**
- *
  * @param height
  * @param width
  * @constructor
@@ -57,24 +56,23 @@ console.log("Площадь прямоугольника =", shape.square());
  * @extends Shape
  */
 function Circle(radius) {
-    Object.defineProperties(this, {
-        height: {
-            get: () => this.radius,
-            set: radius => this.radius = radius,
-            enumerable: true, configurable: false
-        },
-        width: {
-            get: () => this.radius,
-            set: radius => this.radius = radius,
-            enumerable: true, configurable: false
-        }
-    });
-
     this.radius = radius;
 }
 Circle.prototype.square = function () {
     return Math.pow(this.radius, 2) * Math.PI;
 };
+Object.defineProperties(Circle.prototype, {
+    height: {
+        get: () => this.radius,
+        set: radius => this.radius = radius,
+        enumerable: true, configurable: false
+    },
+    width: {
+        get: () => this.radius,
+        set: radius => this.radius = radius,
+        enumerable: true, configurable: false
+    }
+});
 
 let /** @type Shape */ circle = new Circle(2);
 console.log("Площать круга =", circle.square());
