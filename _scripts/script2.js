@@ -1,22 +1,37 @@
 // 'use strict';
 
 //noinspection JSValidateTypes
-let /** @type HTMLElement */ element = document.getElementById("avatar");
+let /** @type HTMLImageElement */ img = document.getElementById("avatar-img");
+img.addEventListener("click", event => console.log("!"), true);
 
-element.addEventListener(
-    "click",
-    event => console.log('Меня зовут Вася!'),
-    true);
+let /** @type HTMLElement */ figure = document.getElementById("avatar");
 
-console.log(element.innerHTML);
+let /** @type HTMLAnchorElement */ q = document.getElementById("q");
+q.addEventListener("keypress", (/** @type KeyboardEvent */ event) => {
+    console.log("keypress");
+}, true);
+q.addEventListener("keyup", (/** @type KeyboardEvent */ event) => {
+    console.log("keyup");
+}, true);
+q.addEventListener("keydown", (/** @type KeyboardEvent */ event) => {
+    console.log("keydown");
+    console.log(event);
+}, true);
 
-// element.innerHTML += "<div>Мама мыла раму!!!</div>";
+Array.from(figure.childNodes).forEach(element => {
+    "use strict";
+    console.log(element);
+});
+
+// console.log(img.innerHTML);
+
+// img.innerHTML += "<div>Мама мыла раму!!!</div>";
 
 //noinspection JSValidateTypes
-let /** @type HTMLDivElement */ div = document.createElement("div");
-div.align = "right";
-let /** @type Text */ text = document.createTextNode("Мама мыла раму!!!");
-div.appendChild(text);
-element.appendChild(div);
+// let /** @type HTMLDivElement */ div = document.createElement("div");
+// div.align = "right";
+// let /** @type Text */ text = document.createTextNode("Мама мыла раму!!!");
+// div.appendChild(text);
+// img.appendChild(div);
 
-console.log(element.innerHTML);
+// console.log(img.innerHTML);
