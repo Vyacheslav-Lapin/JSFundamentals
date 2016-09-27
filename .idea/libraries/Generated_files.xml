@@ -3,12 +3,14 @@
     <properties>
       <sourceFilesUrls>
         <item url="file://$PROJECT_DIR$/_scripts/script3-compiled.js" />
+        <item url="file://$PROJECT_DIR$/_scripts/script4-compiled.js" />
         <item url="file://$PROJECT_DIR$/_scripts/script-compiled.js" />
         <item url="file://$PROJECT_DIR$/_scripts/script2-compiled.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/_scripts/script3-compiled.js" />
+      <root url="file://$PROJECT_DIR$/_scripts/script4-compiled.js" />
       <root url="file://$PROJECT_DIR$/_scripts/script-compiled.js" />
       <root url="file://$PROJECT_DIR$/_scripts/script2-compiled.js" />
     </CLASSES>

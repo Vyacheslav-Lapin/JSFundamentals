@@ -9,45 +9,19 @@ function Options() {
     this.credentials = ''; // enum «omit», «same-origin», «include»
     this.cache = ''; // enum «default», «no-store», «reload», «no-cache», «force-cache», «only-if-cached»
     this.redirect = ''; // enum «follow», «error»
-    let x = 8;
 }
 
-// Options.prototype = Object.create(Object.prototype);
-// Options.prototype.constructor = Options;
-
-{
-    let x = 8;
-
-    Options.prototype.m1 = () => {
-        x = 9;
-    };
-
-    Options.prototype.m1 = () => {
-        x = 3;
-    };
-}
-
-Options.m1 = () => {
-    // jhsdfkljsdf
-};
-
-Options.m1();
-new Options().m2();
-
-if (!('fetch' in window)
-    && typeof window.fetch !== 'function'
-// && window.fetch.length === 2
-) {
+if (!('fetch' in window) && typeof window.fetch !== 'function') {
 
     /**
      * Polyfill
      * @param {string} url
      * @param {Options} options
      */
-    window.fetch = (url, options) => {
+    var fetch = (url, options) => {
 
         const /** @type XMLHttpRequest */ xhr = new XMLHttpRequest();
-        xhr.open(METHOD, url, true);
+        xhr.open(options.method, url, true);
         //noinspection SpellCheckingInspection
         xhr.onreadystatechange = () => {
             if (xhr.readyState !== 4) return;
