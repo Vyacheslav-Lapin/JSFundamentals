@@ -1,13 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xml:lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:svg="http://www.w3.org/2000/svg"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.w3.org/2000/svg
+     http://www.w3.org/TR/2002/WD-SVG11-20020108/SVG.xsd">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script src="/node_modules/requirejs/require.js"></script>
-    <script src="/node_modules/jasmine-core/lib/jasmine-core.js"></script>
-    <script src="/_tests/1.js"></script>
+    <!--<script src="/node_modules/requirejs/require.js"></script>-->
+    <!--<script src="/node_modules/jasmine-core/lib/jasmine-core.js"></script>-->
+    <!--<script src="/_tests/1.js"></script>-->
+    <script src="/_scripts/svg.js"></script>
+    <script>
+        addEventListener("DOMContentLoaded", () => {
+            document.body.appendChild(
+                    pieChart([12, 23, 34, 45], 640, 400, 200, 200, 150,
+                            ['red','blue','yellow','green'],
+                            ['Север','Юг', 'Восток', 'Запад'], 400, 100));
+        }, true);
+    </script>
 </head>
 <body>
+
+Это красный квадрат:
+<svg width="10" height="10">
+    <rect x="0" y="0" width="10" height="10" fill="red"></rect>
+</svg>
+
+Это голубой круг:
+<svg width="10" height="10">
+    <circle cx="5" cy="5" r="5" fill="blue"></circle>
+</svg>
 
 </body>
 </html>
