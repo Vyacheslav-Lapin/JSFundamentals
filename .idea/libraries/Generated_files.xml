@@ -2,31 +2,39 @@
   <library name="Generated files" type="javaScript">
     <properties>
       <sourceFilesUrls>
-        <item url="file://$PROJECT_DIR$/_scripts/svg-compiled.js" />
         <item url="file://$PROJECT_DIR$/_scripts/svg/WindowEventHandlers-compiled.js" />
-        <item url="file://$PROJECT_DIR$/karma.conf-compiled.js" />
         <item url="file://$PROJECT_DIR$/_scripts/svg/SVGFitToViewBox-compiled.js" />
         <item url="file://$PROJECT_DIR$/_scripts/script3-compiled.js" />
         <item url="file://$PROJECT_DIR$/_scripts/script4-compiled.js" />
         <item url="file://$PROJECT_DIR$/_scripts/script-compiled.js" />
-        <item url="file://$PROJECT_DIR$/_scripts/svg/SVGSVGElement-compiled.js" />
-        <item url="file://$PROJECT_DIR$/_tests/1-compiled.js" />
+        <item url="file://$PROJECT_DIR$/_scripts/svg/SVGPathElement-compiled.js" />
+        <item url="file://$PROJECT_DIR$/_scripts/svg/SVGGeometryElement-compiled.js" />
         <item url="file://$PROJECT_DIR$/_scripts/script2-compiled.js" />
+        <item url="file://$PROJECT_DIR$/_tests/1-compiled.js" />
+        <item url="file://$PROJECT_DIR$/_scripts/svg/SVGRectElement-compiled.js" />
+        <item url="file://$PROJECT_DIR$/_scripts/svg-compiled.js" />
+        <item url="file://$PROJECT_DIR$/karma.conf-compiled.js" />
+        <item url="file://$PROJECT_DIR$/_scripts/svg/SVGTextElement-compiled.js" />
+        <item url="file://$PROJECT_DIR$/_scripts/svg/SVGSVGElement-compiled.js" />
         <item url="file://$PROJECT_DIR$/_scripts/svg/SVGZoomAndPan-compiled.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/test-main-compiled.js" />
-      <root url="file://$PROJECT_DIR$/_scripts/svg-compiled.js" />
       <root url="file://$PROJECT_DIR$/_scripts/svg/WindowEventHandlers-compiled.js" />
-      <root url="file://$PROJECT_DIR$/karma.conf-compiled.js" />
       <root url="file://$PROJECT_DIR$/_scripts/svg/SVGFitToViewBox-compiled.js" />
       <root url="file://$PROJECT_DIR$/_scripts/script3-compiled.js" />
       <root url="file://$PROJECT_DIR$/_scripts/script4-compiled.js" />
       <root url="file://$PROJECT_DIR$/_scripts/script-compiled.js" />
-      <root url="file://$PROJECT_DIR$/_scripts/svg/SVGSVGElement-compiled.js" />
-      <root url="file://$PROJECT_DIR$/_tests/1-compiled.js" />
+      <root url="file://$PROJECT_DIR$/_scripts/svg/SVGPathElement-compiled.js" />
+      <root url="file://$PROJECT_DIR$/_scripts/svg/SVGGeometryElement-compiled.js" />
       <root url="file://$PROJECT_DIR$/_scripts/script2-compiled.js" />
+      <root url="file://$PROJECT_DIR$/_tests/1-compiled.js" />
+      <root url="file://$PROJECT_DIR$/_scripts/svg/SVGRectElement-compiled.js" />
+      <root url="file://$PROJECT_DIR$/_scripts/svg-compiled.js" />
+      <root url="file://$PROJECT_DIR$/karma.conf-compiled.js" />
+      <root url="file://$PROJECT_DIR$/_scripts/svg/SVGTextElement-compiled.js" />
+      <root url="file://$PROJECT_DIR$/_scripts/svg/SVGSVGElement-compiled.js" />
       <root url="file://$PROJECT_DIR$/_scripts/svg/SVGZoomAndPan-compiled.js" />
     </CLASSES>
     <SOURCES />
