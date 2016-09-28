@@ -1,4 +1,4 @@
-require('jasmine-core');
+// require('jasmine-core');
 
 describe("Jasmine", () => {
     it("makes testing JavaScript awesome!", () => {

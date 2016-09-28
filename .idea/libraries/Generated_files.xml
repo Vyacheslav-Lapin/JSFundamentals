@@ -3,7 +3,6 @@
     <properties>
       <sourceFilesUrls>
         <item url="file://$PROJECT_DIR$/karma.conf-compiled.js" />
-        <item url="file://$PROJECT_DIR$/test-main-compiled.js" />
         <item url="file://$PROJECT_DIR$/_scripts/script3-compiled.js" />
         <item url="file://$PROJECT_DIR$/_scripts/script4-compiled.js" />
         <item url="file://$PROJECT_DIR$/_scripts/script-compiled.js" />
@@ -12,12 +11,12 @@
       </sourceFilesUrls>
     </properties>
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/karma.conf-compiled.js" />
       <root url="file://$PROJECT_DIR$/test-main-compiled.js" />
+      <root url="file://$PROJECT_DIR$/karma.conf-compiled.js" />
       <root url="file://$PROJECT_DIR$/_scripts/script3-compiled.js" />
       <root url="file://$PROJECT_DIR$/_scripts/script4-compiled.js" />
       <root url="file://$PROJECT_DIR$/_scripts/script-compiled.js" />
-      <root url="file://$PROJECT_DIR$/_test/1-compiled.js" />
+      <root url="file://$PROJECT_DIR$/_tests/1-compiled.js" />
       <root url="file://$PROJECT_DIR$/_scripts/script2-compiled.js" />
     </CLASSES>
     <SOURCES />
