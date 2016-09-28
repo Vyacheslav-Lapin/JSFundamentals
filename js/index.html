@@ -15,9 +15,22 @@
     <script>
         addEventListener("DOMContentLoaded", () => {
             document.body.appendChild(
+//                    pieChart({
+//                        data: [12, 23, 34, 45],
+//                        width: 640,
+//                        height: 400,
+//                        cx: 200,
+//                        cy: 200,
+//                        r: 150,
+//                        colors: ['red','blue','yellow','green'],
+//                        labels: ['Север','Юг', 'Восток', 'Запад'],
+//                        lx: 400,
+//                        ly: 100
+//                    })
                     pieChart([12, 23, 34, 45], 640, 400, 200, 200, 150,
                             ['red','blue','yellow','green'],
-                            ['Север','Юг', 'Восток', 'Запад'], 400, 100));
+                            ['Север','Юг', 'Восток', 'Запад'], 400, 100)
+            );
         }, true);
     </script>
 </head>

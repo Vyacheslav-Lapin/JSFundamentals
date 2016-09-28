@@ -4,8 +4,8 @@
  * сектора.
  * @param {number} width ,
  * @param {number} height размеры SVG-изображения в пикселах
- * @param {number} cx ,
- * @param {number} cy ,
+ * @param {number} centerX ,
+ * @param {number} centerY ,
  * @param {number} r координаты центра и радиус круга
  * @param {Array<number>} colors массив цветов в формате HTML, по одному для
  * каждого сектора
@@ -17,9 +17,10 @@
  * @returns {SVGSVGElement} Элемент <svg>, хранящий круговую диаграмму.
  * Вызывающая программа должна вставить возвращаемый элемент в документ.
  **/
-function pieChart(data, width, height, cx, cy, r, colors, labels, lx, ly) {
+function pieChart(data, width, height, centerX, centerY, r, colors, labels, lx, ly) {
+
     // Пространство имен XML для элементов svg
-    let svgns = "http://www.w3.org/2000/svg";
+    let svgns = 'http://www.w3.org/2000/svg';
 
     // Создать элемент <svg>, указать размеры в пикселах и координаты
     let /** @type SVGSVGElement */ chart = document.createElementNS(svgns, "svg:svg");
@@ -28,14 +29,10 @@ function pieChart(data, width, height, cx, cy, r, colors, labels, lx, ly) {
     chart.setAttribute("viewBox", "0 0 " + width + " " + height);
 
     // Сложить вместе все значения, чтобы получить общую сумму всей диаграммы
-    let total = 0;
-    for (let i = 0; i < data.length; i++)
-        total += data[i];
+    let total = data.reduce((x,y)=> x + y, 0);
 
     // Определить величину каждого сектора. Углы измеряются в радианах.
-    let angles = [];
-    for (let i = 0; i < data.length; i++)
-        angles[i] = data[i] / total * Math.PI * 2;
+    let angles = data.map(i => i / total * Math.PI * 2);
 
     // Цикл по всем секторам диаграммы.
     let startAngle = 0;
@@ -47,10 +44,10 @@ function pieChart(data, width, height, cx, cy, r, colors, labels, lx, ly) {
         // с окружностью. В соответствии с выбранными формулами углу 0 радиан
         // соответствует точка в самой верхней части окружности,
         // а положительные значения откладываются от нее по часовой стрелке.
-        let x1 = cx + r * Math.sin(startAngle);
-        let y1 = cy - r * Math.cos(startAngle);
-        let x2 = cx + r * Math.sin(endAngle);
-        let y2 = cy - r * Math.cos(endAngle);
+        let x1 = centerX + r * Math.sin(startAngle);
+        let y1 = centerY - r * Math.cos(startAngle);
+        let x2 = centerX + r * Math.sin(endAngle);
+        let y2 = centerY - r * Math.cos(endAngle);
 
         // Это флаг для углов, больших половины окружности.
         // Он необходим SVG - механизму рисования дуг
@@ -63,13 +60,13 @@ function pieChart(data, width, height, cx, cy, r, colors, labels, lx, ly) {
         let path = document.createElementNS(svgns, "path");
 
         // Эта строка хранит информацию о контуре, образующем сектор
-        let d = "M " + cx + "," + cy + // Начало в центре окружности
+        let d = "M " + centerX + "," + centerY + // Начало в центре окружности
             " L " + x1 + "," + y1 + // Нарисовать линию к точке (x1, y1)
             " A " + r + "," + r + // Нарисовать дугу с радиусом r
             " 0 " + big + " 1 " + // Информация о дуге
             // ...
             x2 + "," + y2 + // Дуга заканчивается в точке (x2, y2)
-            " Z"; // Закончить рисование в точке (cx, cy)
+            " Z"; // Закончить рисование в точке (centerX, centerY)
 
         // Теперь установить атрибуты элемента < svg : path >
         path.setAttribute("d", d); // Установить описание контура
