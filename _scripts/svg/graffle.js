@@ -63,6 +63,7 @@ Raphael.fn.connection = function (obj1, obj2, line, bg) {
 
 addEventListener("DOMContentLoaded", () => {
     let connections = [],
+        r = Raphael("holder", 640, 480),
         shapes = [
             r.ellipse(190, 100, 30, 20),
             r.rect(290, 80, 60, 40, 10),
@@ -85,8 +86,7 @@ addEventListener("DOMContentLoaded", () => {
         },
         up = function () {
             this.animate({"fill-opacity": 0}, 500);
-        },
-        r = Raphael("holder", 640, 480);
+        };
 
     for (var i = 0, ii = shapes.length; i < ii; i++) {
         var color = Raphael.getColor();
