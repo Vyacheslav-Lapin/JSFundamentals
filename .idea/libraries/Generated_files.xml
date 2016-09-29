@@ -7,6 +7,7 @@
         <item url="file://$PROJECT_DIR$/_scripts/_lib/svg/SVGElement-compiled.js" />
         <item url="file://$PROJECT_DIR$/_scripts/script3-compiled.js" />
         <item url="file://$PROJECT_DIR$/_scripts/script4-compiled.js" />
+        <item url="file://$PROJECT_DIR$/_scripts/svg/graffle-compiled.js" />
         <item url="file://$PROJECT_DIR$/_scripts/_lib/svg/SVGAnimatedString-compiled.js" />
         <item url="file://$PROJECT_DIR$/_scripts/script-compiled.js" />
         <item url="file://$PROJECT_DIR$/_scripts/_lib/svg/SVGPathElement-compiled.js" />
@@ -20,7 +21,7 @@
         <item url="file://$PROJECT_DIR$/karma.conf-compiled.js" />
         <item url="file://$PROJECT_DIR$/_scripts/_lib/svg/SVGTextElement-compiled.js" />
         <item url="file://$PROJECT_DIR$/_scripts/_lib/svg/SVGSVGElement-compiled.js" />
-        <item url="file://$PROJECT_DIR$/_scripts/rafael-compiled.js" />
+        <item url="file://$PROJECT_DIR$/_scripts/svg/reflection-compiled.js" />
         <item url="file://$PROJECT_DIR$/_scripts/canvas-compiled.js" />
         <item url="file://$PROJECT_DIR$/_scripts/_lib/svg/SVGZoomAndPan-compiled.js" />
       </sourceFilesUrls>
@@ -32,6 +33,7 @@
       <root url="file://$PROJECT_DIR$/_scripts/_lib/svg/SVGElement-compiled.js" />
       <root url="file://$PROJECT_DIR$/_scripts/script3-compiled.js" />
       <root url="file://$PROJECT_DIR$/_scripts/script4-compiled.js" />
+      <root url="file://$PROJECT_DIR$/_scripts/svg/graffle-compiled.js" />
       <root url="file://$PROJECT_DIR$/_scripts/_lib/svg/SVGAnimatedString-compiled.js" />
       <root url="file://$PROJECT_DIR$/_scripts/script-compiled.js" />
       <root url="file://$PROJECT_DIR$/_scripts/_lib/svg/SVGPathElement-compiled.js" />
@@ -45,7 +47,7 @@
       <root url="file://$PROJECT_DIR$/karma.conf-compiled.js" />
       <root url="file://$PROJECT_DIR$/_scripts/_lib/svg/SVGTextElement-compiled.js" />
       <root url="file://$PROJECT_DIR$/_scripts/_lib/svg/SVGSVGElement-compiled.js" />
-      <root url="file://$PROJECT_DIR$/_scripts/reflection-compiled.js" />
+      <root url="file://$PROJECT_DIR$/_scripts/svg/reflection-compiled.js" />
       <root url="file://$PROJECT_DIR$/_scripts/canvas-compiled.js" />
       <root url="file://$PROJECT_DIR$/_scripts/_lib/svg/SVGZoomAndPan-compiled.js" />
     </CLASSES>
