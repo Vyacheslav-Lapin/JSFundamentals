@@ -2,13 +2,13 @@
  * Created by admin on 29/09/16.
  */
 
+// создание представления для всего буфера
 let buffer = new ArrayBuffer(20),
-    view = new DataView(buffer),
-    value;
 
-view.setUint32(0, 65536);
+    //хранение 8- и 16- раз рядных целых чисел в одном буфере
+    int8s = new Int8Array(buffer, 0, 9),
+    uintlбs = new Uint16Array(buffer,
+        int8s.length * int8s.constructor.BYTES_PER_ELEMENT + 1);
 
-// 16 - разрядные целые числа занимают по 2 байта
-view.setUint16(2, 50);
-value = view.getUint32(0);
-console.log(value); // 25
+console.log(int8s.length * int8s.constructor.BYTES_PER_ELEMENT + 1);
+console.log(uintlбs.length);
