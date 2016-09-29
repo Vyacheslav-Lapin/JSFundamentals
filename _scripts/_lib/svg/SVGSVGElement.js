@@ -1,6 +1,8 @@
 /**
  * @interface
- * @implements SVGFitToViewBox, SVGZoomAndPan, WindowEventHandlers
+ * @implements SVGFitToViewBox
+ * @implements SVGZoomAndPan
+ * @implements WindowEventHandlers
  */
 class SVGSVGElement {
     constructor() {
