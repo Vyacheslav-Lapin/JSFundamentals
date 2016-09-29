@@ -17,15 +17,15 @@
  * @returns {SVGSVGElement} Элемент <svg>, хранящий круговую диаграмму.
  * Вызывающая программа должна вставить возвращаемый элемент в документ.
  **/
-function pieChart({data, width, height, centerX, centerY, r, colors, labels, legendX, legendY}) {
+function pieChart({width, height, centerX, centerY, r, legendX, legendY, data, colors, labels}) {
 
     // Пространство имен XML для элементов svg
     /** @type string */
-    let svgns = 'http://www.w3.org/2000/svg';
+    const svgNS = 'http://www.w3.org/2000/svg';
 
     // Создать элемент <svg>, указать размеры в пикселах и координаты
     /** @type SVGSVGElement */
-    let chart = document.createElementNS(svgns, "svg:svg");
+    const chart = document.createElementNS(svgNS, "svg:svg");
     chart.setAttribute("width", width);
     chart.setAttribute("height", height);
     chart.setAttribute("viewBox", "0 0 " + width + " " + height);
@@ -58,7 +58,7 @@ function pieChart({data, width, height, centerX, centerY, r, colors, labels, leg
         // Мы описываем сектор с помощью элемента <svg:path> .
         // Обратите внимание, что он создается вызовом createElementNS()
         /** @type SVGPathElement */
-        let path = document.createElementNS(svgns, "path");
+        let path = document.createElementNS(svgNS, "path");
 
         // Эта строка хранит информацию о контуре, образующем сектор
         /** @type string */
@@ -82,7 +82,7 @@ function pieChart({data, width, height, centerX, centerY, r, colors, labels, leg
 
         // Нарисовать маленький квадрат для идентификации сектора в легенде
         /** @type SVGRectElement */
-        let icon = document.createElementNS(svgns, "rect");
+        let icon = document.createElementNS(svgNS, "rect");
         icon.setAttribute("x", legendX); // Координаты квадрата
         icon.setAttribute("y", legendY + 30 * i);
         icon.setAttribute("width", 20); // Размер квадрата
@@ -94,7 +94,7 @@ function pieChart({data, width, height, centerX, centerY, r, colors, labels, leg
 
         // Добавить метку правее квадрата
         /** @type SVGTextElement */
-        let label = document.createElementNS(svgns, "text");
+        let label = document.createElementNS(svgNS, "text");
         label.setAttribute("x", legendX + 30); // Координаты текста
         label.setAttribute("y", legendY + 30 * i + 18);
 
