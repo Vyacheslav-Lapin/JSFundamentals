@@ -20,6 +20,7 @@
         <item url="file://$PROJECT_DIR$/karma.conf-compiled.js" />
         <item url="file://$PROJECT_DIR$/_scripts/_lib/svg/SVGTextElement-compiled.js" />
         <item url="file://$PROJECT_DIR$/_scripts/_lib/svg/SVGSVGElement-compiled.js" />
+        <item url="file://$PROJECT_DIR$/_scripts/rafael-compiled.js" />
         <item url="file://$PROJECT_DIR$/_scripts/canvas-compiled.js" />
         <item url="file://$PROJECT_DIR$/_scripts/_lib/svg/SVGZoomAndPan-compiled.js" />
       </sourceFilesUrls>
@@ -44,6 +45,7 @@
       <root url="file://$PROJECT_DIR$/karma.conf-compiled.js" />
       <root url="file://$PROJECT_DIR$/_scripts/_lib/svg/SVGTextElement-compiled.js" />
       <root url="file://$PROJECT_DIR$/_scripts/_lib/svg/SVGSVGElement-compiled.js" />
+      <root url="file://$PROJECT_DIR$/_scripts/reflection-compiled.js" />
       <root url="file://$PROJECT_DIR$/_scripts/canvas-compiled.js" />
       <root url="file://$PROJECT_DIR$/_scripts/_lib/svg/SVGZoomAndPan-compiled.js" />
     </CLASSES>
