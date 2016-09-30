@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 Raphael.fn.connection = function (obj1, obj2, line, bg) {
     if (obj1.line && obj1.from && obj1.to) {
@@ -31,7 +31,7 @@ Raphael.fn.connection = function (obj1, obj2, line, bg) {
             }
         }
     }
-    const res = dis.length == 0 ? [0, 4] : d[Math.min.apply(Math, dis)];
+    const res = dis.length == 0 ? [0, 4] : d[Math.min(...dis)];
 
     const x1 = p[res[0]].x,
         y1 = p[res[0]].y,
@@ -46,27 +46,27 @@ Raphael.fn.connection = function (obj1, obj2, line, bg) {
         x3 = [0, 0, 0, 0, x4, x4, x4 - dx, x4 + dx][res[1]].toFixed(3),
         y3 = [0, 0, 0, 0, y1 + dy, y1 - dy, y4, y4][res[1]].toFixed(3);
 
-    const path = ["M", x1.toFixed(3), y1.toFixed(3), "C", x2, y2, x3, y3, x4.toFixed(3), y4.toFixed(3)].join(",");
+    const path = ["M", x1.toFixed(3), y1.toFixed(3), "C", x2, y2, x3, y3, x4.toFixed(3), y4.toFixed(3)].join(`,`);
 
     if (line && line.line) {
         line.bg && line.bg.attr({path: path});
         line.line.attr({path: path});
     } else {
-        const color = typeof line == "string" ? line : "#000";
+        const color = typeof line == `string` ? line : `#000`;
         return {
             bg: bg && bg.split && this.path(path).attr({
                 stroke: bg.split("|")[0],
-                fill: "none",
-                "stroke-width": bg.split("|")[1] || 3
+                fill: `none`,
+                "stroke-width": bg.split(`|`)[1] || 3
             }),
-            line: this.path(path).attr({stroke: color, fill: "none"}),
+            line: this.path(path).attr({stroke: color, fill: `none`}),
             from: obj1,
             to: obj2
         };
     }
 };
 
-addEventListener("DOMContentLoaded", () => {
+addEventListener(`DOMContentLoaded`, () => {
     const connections = [],
         r = Raphael("holder", 640, 480),
         shapes = [
@@ -93,11 +93,11 @@ addEventListener("DOMContentLoaded", () => {
             this.animate({"fill-opacity": 0}, 500);
         };
 
-    for (let i = 0, ii = shapes.length; i < ii; i++) {
+    shapes.forEach(shape => {
         const color = Raphael.getColor();
-        shapes[i].attr({fill: color, stroke: color, "fill-opacity": 0, "stroke-width": 2, cursor: "move"});
-        shapes[i].drag(move, dragger, up);
-    }
+        shape.attr({fill: color, stroke: color, "fill-opacity": 0, "stroke-width": 2, cursor: "move"});
+        shape.drag(move, dragger, up);
+    });
     connections.push(r.connection(shapes[0], shapes[1], "#fff"));
     connections.push(r.connection(shapes[1], shapes[2], "#fff", "#fff|5"));
     connections.push(r.connection(shapes[1], shapes[3], "#000", "#fff"));

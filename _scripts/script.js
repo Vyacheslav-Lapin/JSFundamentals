@@ -75,9 +75,9 @@ Object.defineProperties(Circle.prototype, {
 });
 
 let /** @type Shape */ circle = new Circle(2);
-console.log("Площать круга =", circle.square());
-console.log("Высота круга =", circle.height = 20);
-console.log("Площать круга =", circle.square());
+console.log(`Площать круга = ${circle.square()}`);
+console.log(`Высота круга = ${circle.height = 20}`);
+console.log(`Площать круга = ${circle.square()}`);
 
 // let b = new Rectangle(2, 3);
 // console.log(b.square());

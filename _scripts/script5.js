@@ -1,9 +1,17 @@
-/**
- * Created by admin on 30/09/16.
- */
+"use strict";
 
-function f(x, y, ...a) {
-    return (x + y) * a.length
-}
+const Shape = (() => {
+    const Z = Symbol('z');
+    return class {
+        constructor(z=200) {
+            this[Z] = z;
+        }
+        getZ () {
+            return this[Z];
+        }
+    };
+})();
 
-console.log(f(1, 2, "hello", true, 7) === 9);
+const shape = new Shape(150);
+console.log(shape.getZ());
+console.log(shape.getZ());
