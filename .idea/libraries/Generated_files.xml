@@ -2,16 +2,17 @@
   <library name="Generated files" type="javaScript">
     <properties>
       <sourceFilesUrls>
-        <item url="file://$PROJECT_DIR$/_scripts/svg/graffle-compiled.js" />
         <item url="file://$PROJECT_DIR$/_scripts/script3-compiled.js" />
         <item url="file://$PROJECT_DIR$/_scripts/script4-compiled.js" />
+        <item url="file://$PROJECT_DIR$/_scripts/svg/graffle-compiled.js" />
         <item url="file://$PROJECT_DIR$/_scripts/script-compiled.js" />
         <item url="file://$PROJECT_DIR$/_scripts/script6-compiled.js" />
-        <item url="file://$PROJECT_DIR$/_scripts/script2-compiled.js" />
         <item url="file://$PROJECT_DIR$/_tests/1-compiled.js" />
+        <item url="file://$PROJECT_DIR$/_scripts/script2-compiled.js" />
+        <item url="file://$PROJECT_DIR$/_scripts/ts/interfaces-compiled.js" />
         <item url="file://$PROJECT_DIR$/_scripts/svg/svg-compiled.js" />
-        <item url="file://$PROJECT_DIR$/_scripts/canvas-compiled.js" />
         <item url="file://$PROJECT_DIR$/karma.conf-compiled.js" />
+        <item url="file://$PROJECT_DIR$/_scripts/canvas-compiled.js" />
         <item url="file://$PROJECT_DIR$/_scripts/webgl/typedArrays-compiled.js" />
         <item url="file://$PROJECT_DIR$/_scripts/_lib/svg/GlobalEventHandlers-compiled.js" />
         <item url="file://$PROJECT_DIR$/_scripts/svg-compiled.js" />
@@ -82,16 +83,17 @@
       <root url="file://$PROJECT_DIR$/gulpfile-compiled.js" />
       <root url="file://$PROJECT_DIR$/_scripts/unicode-compiled.js" />
       <root url="file://$PROJECT_DIR$/_scripts/greeter-compiled.js" />
-      <root url="file://$PROJECT_DIR$/_scripts/svg/graffle-compiled.js" />
       <root url="file://$PROJECT_DIR$/_scripts/script3-compiled.js" />
       <root url="file://$PROJECT_DIR$/_scripts/script4-compiled.js" />
+      <root url="file://$PROJECT_DIR$/_scripts/svg/graffle-compiled.js" />
       <root url="file://$PROJECT_DIR$/_scripts/script-compiled.js" />
       <root url="file://$PROJECT_DIR$/_scripts/script6-compiled.js" />
-      <root url="file://$PROJECT_DIR$/_scripts/script2-compiled.js" />
       <root url="file://$PROJECT_DIR$/_tests/1-compiled.js" />
+      <root url="file://$PROJECT_DIR$/_scripts/script2-compiled.js" />
+      <root url="file://$PROJECT_DIR$/_scripts/ts/interfaces-compiled.js" />
       <root url="file://$PROJECT_DIR$/_scripts/svg/svg-compiled.js" />
-      <root url="file://$PROJECT_DIR$/_scripts/canvas-compiled.js" />
       <root url="file://$PROJECT_DIR$/karma.conf-compiled.js" />
+      <root url="file://$PROJECT_DIR$/_scripts/canvas-compiled.js" />
       <root url="file://$PROJECT_DIR$/_scripts/webgl/typedArrays-compiled.js" />
       <root url="file://$PROJECT_DIR$/_scripts/_lib/svg/GlobalEventHandlers-compiled.js" />
       <root url="file://$PROJECT_DIR$/_scripts/svg-compiled.js" />
