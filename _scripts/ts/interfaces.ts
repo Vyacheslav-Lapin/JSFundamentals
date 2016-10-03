@@ -82,33 +82,113 @@
 //     }
 // }
 
-interface ClockConstructor {
-    new (hour: number, minute: number): ClockInterface;
-}
+// interface ClockConstructor {
+//     new (hour: number, minute: number): ClockInterface;
+// }
+//
+// interface ClockInterface {
+//     tick();
+// }
+//
+// function createClock(clockConstructor: ClockConstructor, hour: number, minute: number): ClockInterface {
+//     return new clockConstructor(hour, minute);
+// }
+//
+// class DigitalClock implements ClockInterface {
+//     constructor(private h: number, private m: number) { }
+//     public tick() {
+//         console.log(`beep beep! I\`m ${this.h}, ${this.m}`);
+//     }
+// }
+// class AnalogClock implements ClockInterface {
+//     constructor(private h: number, private m: number) { }
+//     public tick() {
+//         console.log(`tick tock! I\`m ${this.h}, ${this.m}`);
+//     }
+// }
+//
+// let digital = createClock(DigitalClock, 12, 17);
+// let analog = createClock(AnalogClock, 7, 32);
+//
+// console.log(digital);
+// console.log(analog);
 
-interface ClockInterface {
-    tick();
-}
+// interface Shape {
+//     color?: string;
+// }
+//
+// interface Square extends Shape {
+//     sideLength?: number;
+// }
+//
+// let square = {} as Square;
+// square.color = "blue";
+// square.sideLength = 10;
 
-function createClock(clockConstructor: ClockConstructor, hour: number, minute: number): ClockInterface {
-    return new clockConstructor(hour, minute);
-}
+// interface Shape {
+//     color: string;
+// }
+//
+// interface PenStroke {
+//     penWidth: number;
+// }
+//
+// interface Square extends Shape, PenStroke {
+//     sideLength: number;
+// }
+//
+// let square = {} as Square;
+// square.color = "blue";
+// square.sideLength = 10;
+// square.penWidth = 5.0;
 
-class DigitalClock implements ClockInterface {
-    constructor(private h: number, private m: number) { }
-    public tick() {
-        console.log(`beep beep! I\`m ${this.h}, ${this.m}`);
+// interface Counter {
+//     (start: number): string;
+//     interval: number;
+//     reset(): void;
+// }
+//
+// function getCounter(): Counter {
+//     let counter = <Counter> ((start) => { return String(start); });
+//     counter.interval = 123;
+//     counter.reset = () => { console.log(counter(this.interval)); };
+//     return counter;
+// }
+//
+// let c = getCounter();
+// c(10);
+// c.reset();
+// c.interval = 5.0;
+
+class Control {
+    public state: any;
+    constructor() {
+        this.state = "123";
     }
 }
-class AnalogClock implements ClockInterface {
-    constructor(private h: number, private m: number) { }
-    public tick() {
-        console.log(`tick tock! I\`m ${this.h}, ${this.m}`);
-    }
+
+let control = new Control();
+console.log(`state` in control);
+console.log(control.hasOwnProperty(`state`));
+console.log(control.state);
+
+interface SelectableControl extends Control {
+    select(): void;
 }
 
-let digital = createClock(DigitalClock, 12, 17);
-let analog = createClock(AnalogClock, 7, 32);
+let selectableControl: SelectableControl = {state: "135", select() { return; }} as SelectableControl;
 
-console.log(digital);
-console.log(analog);
+class Button extends Control implements SelectableControl {
+    public select() { return; }
+}
+//
+// class TextBox extends Control {
+//     select() { }
+// }
+//
+// class Image extends Control {
+// }
+//
+// class Location {
+//     select() { }
+// }
