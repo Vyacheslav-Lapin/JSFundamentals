@@ -2,6 +2,7 @@
   "extends": "tslint:latest",
   "rules": {
     "no-constructor-vars": false,
+    "comment-format": false,
     "interface-name": false,
     "no-console": false,
     "curly": false

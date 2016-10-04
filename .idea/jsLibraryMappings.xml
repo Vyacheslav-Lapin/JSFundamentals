@@ -5,6 +5,5 @@
     <file url="file://$PROJECT_DIR$/_scripts/script.js" libraries="{ECMAScript 6}" />
     <file url="PROJECT" libraries="{raphael}" />
     <includedPredefinedLibrary name="ECMAScript 6" />
-    <includedPredefinedLibrary name="JSFundamentals/node_modules" />
   </component>
 </project>
