@@ -160,28 +160,28 @@
 // c.reset();
 // c.interval = 5.0;
 
-class Control {
-    public state: any;
-    constructor() {
-        this.state = "123";
-    }
-}
-
-let control = new Control();
-console.log(`state` in control);
-console.log(control.hasOwnProperty(`state`));
-console.log(control.state);
-
-interface SelectableControl extends Control {
-    select(): void;
-}
-
-let selectableControl: SelectableControl = {state: "135", select() { return; }} as SelectableControl;
-
-class Button extends Control implements SelectableControl {
-    public select() { return; }
-}
+// class Control {
+//     public state: any;
+//     constructor() {
+//         this.state = "123";
+//     }
+// }
 //
+// let control = new Control();
+// console.log(`state` in control);
+// console.log(control.hasOwnProperty(`state`));
+// console.log(control.state);
+//
+// interface SelectableControl extends Control {
+//     select(): void;
+// }
+//
+// let selectableControl: SelectableControl = {state: "135", select() { return; }} as SelectableControl;
+//
+// class Button extends Control implements SelectableControl {
+//     public select() { return; }
+// }
+
 // class TextBox extends Control {
 //     select() { }
 // }
