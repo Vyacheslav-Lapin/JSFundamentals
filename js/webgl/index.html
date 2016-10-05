@@ -5,6 +5,18 @@
     <title>Title</title>
     <!--<script src="/_scripts/webgl/typedArrays.js"></script>-->
     <script src="/_scripts/ts/webgl.js"></script>
+    <script type="x-webgl/x-vertex-shader" id="vertexShader">
+        attribute vec2 aVertexPosition;
+        void main() {
+            gl_Position = vec4(aVertexPosition, 0.0, 1.0);
+        }
+    </script>
+    <script type="x-webgl/x-vertex-shader" id="fragmentShader">
+        uniform vec4 uColor;
+        void main() {
+            gl_FragColor = uColor;
+        }
+    </script>
     <style>
         body {
             text-align : center;
@@ -23,7 +35,6 @@
             margin : auto;
             padding : 0;
             border : none;
-            background-color : black;
         }
     </style>
 </head>

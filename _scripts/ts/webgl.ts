@@ -1,25 +1,69 @@
 addEventListener("DOMContentLoaded", () => {
 
     // References to the document elements.
-    const gl = getWebGLContext(document.createElement("canvas") as HTMLCanvasElement, {
+    const gl = getWebGLContext(document.querySelector("canvas") as HTMLCanvasElement, {
         alpha: true,
         antialias: true,
         depth: true,
         premultipliedAlpha: true,
         preserveDrawingBuffer: false,
-        stencil: false,
+        stencil: false
     });
 
     checkWebGlSupported();
 
-    gl.viewport(0, 0, gl.drawingBufferWidth, gl.drawingBufferHeight);
-
-    // Set the clear color to darkish green.
-    gl.clearColor(0.5, 1.0, 0.5, 0.2);
-
-    // Clear the context with the newly set color. This is
-    // the function call that actually does the drawing.
+    gl.viewport(0, 0, gl.drawingBufferWidth / 2, gl.drawingBufferHeight / 2);
+    gl.clearColor(0.5, 1.0, 0.5, 1);
     gl.clear(gl.COLOR_BUFFER_BIT);
+
+    // gl.viewport (0, 0, drawing.width, drawing.height ) ;
+    // Set the clear color to darkish green.
+
+    const buffer = gl.createBuffer();
+    gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
+    gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([0, 0.5, 1]), gl.STATIC_DRAW);
+
+    // ...
+
+    gl.deleteBuffer(buffer);
+
+    // OpenGL Shading Language
+    // Шейдер от Бартека Дроздзя ( Bartek Drozdz )
+    const ogsl: string =
+        `attribute vec2 aVertexPosition;
+         void main () {
+            gl_Position = vec4(aVertexPosition, 0.0, 1.0);
+         }`;
+    const vertexGlsl = (<HTMLScriptElement> document.getElementById("vertexShader")).text;
+    const fragmentGlsl = (<HTMLScriptElement> document.getElementById("fragmentShader")).text;
+
+    console.log(ogsl);
+
+    const errors = execute(() => {
+        console.log();
+    });
+
+    console.log(errors);
+
+    function execute(action: () => void): number[] {
+        action();
+        const errors: number[] = [];
+        for (let error of getErrors(gl.getError)) {
+            errors.push(error);
+        }
+        return errors;
+    }
+
+    function* getErrors(getError: () => number) {
+        while (true) {
+            const error = getError();
+            if (error !== gl.NO_ERROR) {
+                yield error;
+            } else {
+                return error;
+            }
+        }
+    }
 
     function checkWebGlSupported() {
         document.querySelector("button").addEventListener("click", () =>
