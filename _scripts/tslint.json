@@ -5,7 +5,9 @@
     "comment-format": false,
     "interface-name": false,
     "no-console": false,
-    "curly": false
+    "curly": false,
+    "no-shadowed-variable": false,
+    "no-trailing-whitespace": false
   },
   "rulesDirectory": [
   ]

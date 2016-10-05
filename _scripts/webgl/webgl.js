@@ -16,8 +16,7 @@ window.addEventListener("DOMContentLoaded", () => {
         var canvas = document.createElement("canvas");
 
         // Get WebGLRenderingContext from canvas element.
-        var gl = canvas.getContext("webgl")
-            || canvas.getContext("experimental-webgl");
+        var gl = canvas.getContext("webgl") || canvas.getContext("experimental-webgl");
 
         // Report the result.
         paragraph.innerHTML = (gl && gl instanceof WebGLRenderingContext) ?

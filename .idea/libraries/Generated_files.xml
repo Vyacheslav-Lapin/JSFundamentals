@@ -7,10 +7,13 @@
         <item url="file://$PROJECT_DIR$/_scripts/svg/svg-compiled.js" />
         <item url="file://$PROJECT_DIR$/_tests/1-compiled.js" />
         <item url="file://$PROJECT_DIR$/karma.conf-compiled.js" />
+        <item url="file://$PROJECT_DIR$/_scripts/ts/webjl-compiled.js" />
+        <item url="file://$PROJECT_DIR$/_scripts/ts/webgl-compiled.js" />
         <item url="file://$PROJECT_DIR$/_scripts/ts/type-competibility-compiled.js" />
         <item url="file://$PROJECT_DIR$/_scripts/_lib/svg/GlobalEventHandlers-compiled.js" />
         <item url="file://$PROJECT_DIR$/_scripts/ts/Classes-compiled.js" />
         <item url="file://$PROJECT_DIR$/_scripts/webgl/typedArrays-compiled.js" />
+        <item url="file://$PROJECT_DIR$/_scripts/ts/advanced-types-compiled.js" />
         <item url="file://$PROJECT_DIR$/_scripts/webgl/webgl-compiled.js" />
         <item url="file://$PROJECT_DIR$/_scripts/canvas/canvas-compiled.js" />
         <item url="file://$PROJECT_DIR$/_scripts/ts/interfaces-compiled.js" />
@@ -92,10 +95,13 @@
       <root url="file://$PROJECT_DIR$/_scripts/svg/svg-compiled.js" />
       <root url="file://$PROJECT_DIR$/_tests/1-compiled.js" />
       <root url="file://$PROJECT_DIR$/karma.conf-compiled.js" />
+      <root url="file://$PROJECT_DIR$/_scripts/ts/webjl-compiled.js" />
+      <root url="file://$PROJECT_DIR$/_scripts/ts/webgl-compiled.js" />
       <root url="file://$PROJECT_DIR$/_scripts/ts/type-competibility-compiled.js" />
       <root url="file://$PROJECT_DIR$/_scripts/_lib/svg/GlobalEventHandlers-compiled.js" />
       <root url="file://$PROJECT_DIR$/_scripts/ts/Classes-compiled.js" />
       <root url="file://$PROJECT_DIR$/_scripts/webgl/typedArrays-compiled.js" />
+      <root url="file://$PROJECT_DIR$/_scripts/ts/advanced-types-compiled.js" />
       <root url="file://$PROJECT_DIR$/_scripts/webgl/webgl-compiled.js" />
       <root url="file://$PROJECT_DIR$/_scripts/canvas/canvas-compiled.js" />
       <root url="file://$PROJECT_DIR$/_scripts/ts/interfaces-compiled.js" />
