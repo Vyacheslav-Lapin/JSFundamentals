@@ -38,6 +38,30 @@ addEventListener("DOMContentLoaded", () => {
     const fragmentGlsl = (<HTMLScriptElement> document.getElementById("fragmentShader")).text;
 
     console.log(ogsl);
+    console.log(vertexGlsl);
+    console.log(fragmentGlsl);
+
+    const program: WebGLProgram = gl.createProgram();
+
+    const vertexShader = gl.createShader(gl.VERTEX_SHADER);
+    gl.shaderSource(vertexShader, vertexGlsl);
+    gl.compileShader(vertexShader);
+    gl.attachShader(program, vertexShader);
+
+    const fragmentShader = gl.createShader(gl.FRAGMENT_SHADER);
+    gl.shaderSource(fragmentShader, fragmentGlsl);
+    gl.compileShader(fragmentShader);
+    gl.attachShader(program, fragmentShader);
+
+    gl.linkProgram(program);
+
+    const uColor = gl.getUniformLocation(program, "uColor");
+    gl.uniform4fv(uColor, [0, 0, 0, 1]);
+
+    const aVertexPosition = gl.getAttribLocation(program, "aVertexPosition");
+    const size = 2;
+    gl.enableVertexAttribArray(aVertexPosition);
+    gl.vertexAttribPointer(aVertexPosition, size, gl.FLOAT, false, 0, 0) ;
 
     const errors = execute(() => {
         console.log();
