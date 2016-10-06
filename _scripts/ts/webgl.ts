@@ -1,14 +1,7 @@
 addEventListener("DOMContentLoaded", () => {
 
     // References to the document elements.
-    const gl = getWebGLContext(document.querySelector("canvas") as HTMLCanvasElement, {
-        alpha: true,
-        antialias: true,
-        depth: true,
-        premultipliedAlpha: true,
-        preserveDrawingBuffer: false,
-        stencil: false
-    });
+    const gl = getWebGLContext(document.querySelector("canvas"));
 
     checkWebGlSupported();
 
@@ -139,7 +132,7 @@ interface WebGLProperties {
     preserveDrawingBuffer: boolean;
 }
 
-function getWebGLContext(canvas: HTMLCanvasElement, webGlProperties: WebGLProperties): WebGLRenderingContext {
+function getWebGLContext(canvas: HTMLCanvasElement, webGlProperties?: WebGLProperties): WebGLRenderingContext {
     return (canvas.getContext("webgl", webGlProperties) ||
     canvas.getContext("experimental-webgl", webGlProperties)) as WebGLRenderingContext;
 }

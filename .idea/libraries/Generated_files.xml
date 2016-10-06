@@ -19,6 +19,7 @@
         <item url="file://$PROJECT_DIR$/_scripts/ts/interfaces-compiled.js" />
         <item url="file://$PROJECT_DIR$/_scripts/ts/greeter-compiled.js" />
         <item url="file://$PROJECT_DIR$/_scripts/ts/typeInterfaces-compiled.js" />
+        <item url="file://$PROJECT_DIR$/_scripts/ts/three/script-compiled.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
@@ -107,6 +108,7 @@
       <root url="file://$PROJECT_DIR$/_scripts/ts/interfaces-compiled.js" />
       <root url="file://$PROJECT_DIR$/_scripts/ts/greeter-compiled.js" />
       <root url="file://$PROJECT_DIR$/_scripts/ts/typeInterfaces-compiled.js" />
+      <root url="file://$PROJECT_DIR$/_scripts/ts/three/script-compiled.js" />
     </CLASSES>
     <SOURCES />
   </library>
