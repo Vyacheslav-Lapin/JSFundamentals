@@ -12,11 +12,14 @@ const vm = new Todos({
             {title: 'Подготовка материала', done: true},
             {title: 'Запись занятия', done: false},
         ],
+        newTask: '',
     },
     methods: {
-        addTask: evt => {
+        addTask: function (evt) {
             evt.preventDefault();
-            console.log(`task added! ${evt.target.elements[0].value}`);
+            // console.log(`task added! ${evt.target.elements[0].value}`);
+            this.tasks.push({title : this.newTask, done: false});
+            this.newTask = '';
         }
     },
     ready: () => console.log('ViewModel ready!')
