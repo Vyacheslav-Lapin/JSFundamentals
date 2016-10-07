@@ -13,13 +13,26 @@ const vm = new Todos({
             {title: 'Запись занятия', done: false},
         ],
         newTask: '',
+        editTask: null,
     },
+
+    filters: {
+        openTasks: function() {
+            return this.tasks.filter(item => !item.done);
+        },
+    },
+
     methods: {
         addTask: function (evt) {
             evt.preventDefault();
             // console.log(`task added! ${evt.target.elements[0].value}`);
             this.tasks.push({title : this.newTask, done: false});
             this.newTask = '';
+        },
+        removeTask: function (index) {
+            // this.tasks.$remove(index);
+            console.log(index);
+            this.tasks[index].done = true;
         }
     },
     ready: () => console.log('ViewModel ready!')

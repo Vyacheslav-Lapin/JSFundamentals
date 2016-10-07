@@ -16,7 +16,14 @@
     <div id="todos" data-title="{{title}}">
         <h1 class="text-center">{{title}}</h1>
         <ul class="list-group">
-            <li class="list-group-element" v-repeat="tasks">{{title}}</li>
+            <li class="list-group-element" v-repeat="task : tasks">
+                <span v-on="dblclick: editTask=task"
+                      v-show="task !== editTask">
+                    {{task.title}}
+                </span>
+                <input v-show="task === editTask" type="text" title="taskName" value="{{task.title}}"/>
+                <span v-on="click: removeTask($index)" class="close">&times;</span>
+            </li>
         </ul>
 
         <form v-on="submit: addTask">
