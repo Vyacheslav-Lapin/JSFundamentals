@@ -13,6 +13,12 @@ const vm = new Todos({
             {title: 'Запись занятия', done: false},
         ],
     },
+    methods: {
+        addTask: evt => {
+            evt.preventDefault();
+            console.log(`task added! ${evt.target.elements[0].value}`);
+        }
+    },
     ready: () => console.log('ViewModel ready!')
 });
 
