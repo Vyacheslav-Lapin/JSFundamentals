@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>VueJS Example</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.min.css" />
     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.2/require.min.js"></script>-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/0.12.1/vue.min.js"></script>
     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.common.min.js"></script>-->
@@ -10,9 +11,14 @@
 </head>
 <body>
 
+<div class="container">
     <div id="todos" data-title="{{title}}">
-        {{title}}
+        <h1 class="text-center">{{title}}</h1>
+        <ul class="list-group">
+            <li class="list-group-element" v-repeat="tasks">{{title}}</li>
+        </ul>
     </div>
+</div>
 
 </body>
 </html>

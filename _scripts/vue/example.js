@@ -8,9 +8,13 @@ const Todos = Vue.extend({
 const vm = new Todos({
     // el: `#todos`,
     data: {
-        title: 'Todos'
+        tasks: [
+            {title: 'Подготовка материала', done: true},
+            {title: 'Запись занятия', done: false},
+        ],
     },
     ready: () => console.log('ViewModel ready!')
 });
 
 vm.$mount('#todos');
+vm.$data.$add('title', `Todos2`);
